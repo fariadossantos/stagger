@@ -8,14 +8,14 @@
     <style media="screen">
       *{font-family: 'Lato', sans-serif;}
     </style>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/customize.css" title="no title" charset="utf-8">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/w3.css" media="screen" title="no title" charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <script type="text/javascript" scr="js/jquery.js"></script>
-    <script type="text/javascript" scr="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <title>Stagger</title>
   </head>
   <body class="w3-margin-top">
@@ -35,10 +35,10 @@
         </div>
 
         <!-- POSTING FROM FRIENDS -->
-        <div class="w3-padding">
+        <div class="w3-padding" id="feedparentbox">
           <div class="w3-row  w3-white">
             <p class="w3-white" style="margin:0; ">
-              <img class="w3-image" src="img/33.jpg" alt="" />
+              <img class="w3-image" src="img/33.jpg" alt="" id="feedimg" />
               <ul class="w3-navbar w3-white w3-center w3-small">
                 <li style="width:25% w3-left">
                   <a  class="w3-hover-white w3-hover-text-dark-grey w3-text-grey" href="#">
@@ -57,7 +57,7 @@
         <div class="w3-padding">
           <div class="w3-row  w3-white ">
             <p class="w3-white" style="margin:0; ">
-              <img class="w3-image" src="img/36.jpg" alt="" />
+              <img class="w3-image" src="img/36.jpg" alt="" id="feedimg" />
               <ul class="w3-navbar w3-white w3-center w3-small">
                 <li style="width:25% w3-right">
                   <a  class="w3-hover-white w3-hover-text-dark-grey w3-text-grey" href="#">
@@ -75,7 +75,7 @@
         <div class="w3-padding">
           <div class="w3-row  w3-white ">
             <p class="w3-white" style="margin:0; ">
-              <img class="w3-image" src="img/30.jpg" alt="" />
+              <img class="w3-image" src="img/30.jpg" alt="" id="feedimg" />
               <ul class="w3-navbar w3-white w3-center w3-small">
                 <li style="width:25% w3-right">
                   <a  class="w3-hover-white w3-hover-text-dark-grey w3-text-grey" href="#">
@@ -94,7 +94,7 @@
         <div class="w3-padding">
           <div class="w3-row  w3-white ">
             <p class="w3-white" style="margin:0; ">
-              <img class="w3-image" src="img/21.jpg" alt="" />
+              <img class="w3-image" src="img/21.jpg" alt="" id="feedimg" />
               <ul class="w3-navbar w3-white w3-center w3-small">
                 <li style="width:25% w3-right">
                   <a  class="w3-hover-white w3-hover-text-dark-grey w3-text-grey" href="#">
@@ -113,7 +113,7 @@
         <div class="w3-padding">
           <div class="w3-row  w3-white ">
             <p class="w3-white" style="margin:0; ">
-              <img class="w3-image" src="img/34.jpg" alt="" />
+              <img class="w3-image" src="img/34.jpg" alt="" id="feedimg" />
               <ul class="w3-navbar w3-white w3-center w3-small">
                 <li style="width:25% w3-right">
                   <a  class="w3-hover-white w3-hover-text-dark-grey w3-text-grey" href="#">
@@ -131,7 +131,7 @@
         <div class="w3-padding">
           <div class="w3-row  w3-white ">
             <p class="w3-white" style="margin:0; ">
-              <img class="w3-image" src="img/22.jpg" alt="" />
+              <img class="w3-image" src="img/22.jpg" alt="" id="feedimg" />
               <ul class="w3-navbar w3-white w3-center w3-small">
                 <li style="width:25% w3-right">
                   <a  class="w3-hover-white w3-hover-text-dark-grey w3-text-grey" href="#">
