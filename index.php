@@ -1,20 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-    <meta name="description" content="Stagger a fashion and branding app, Angola, Israel">
-    <link rel="shortcut icon" href="img/12.png" media="screen" title="no title" charset="utf-8">
-    <style media="screen">
-      *{font-family: 'Lato', sans-serif;}
-    </style>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/w3.css" media="screen" title="no title" charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,300italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <title>Stagger</title>
+    <?php require_once('inc/header.php'); ?>
   </head>
   <body class="w3-margin-top">
     <div class="w3-dark-grey " >
@@ -30,19 +17,7 @@
                                 </div>
                       </div>
             </div>
-            <!-- JAVA SCRIPT CODE THAT DISPLAY THE MENU -->
-            <script>
-                    function myFunction() {
-                        var x = document.getElementById("demo");
-                        if (x.className.indexOf("w3-show") == -1) {
-                            x.className += " w3-show";
-                        } else {
-                            x.className = x.className.replace(" w3-show", "");
-                        }
-                    }
-            </script>
 
-            <!-- END OF JS CODE -->
           <div class="w3-col l12 w3-center " ><br><br><br><br><br>
 
               <!-- APP LOGO -->
@@ -51,16 +26,17 @@
               </div><br><br>
               <!-- LOG IN -->
                   <div class="w3-center w3-padding">
+                  <form class="" name="login" action="" method="post">
                     <p>
-                      <input class="w3-input w3-border-0 w3-round w3-text-grey " type="text" name="userName" value="" placeholder="your name">
+                      <input class="w3-input w3-border-0 w3-round w3-text-grey " type="text" name="name" value="" placeholder="your name or e-mail">
                     </p>
                     <p>
-                        <input class="w3-input w3-border-0 w3-round w3-text-grey " type="password" name="userPassword" value="" placeholder="your password">
+                        <input class="w3-input w3-border-0 w3-round w3-text-grey " type="password" name="password" value="" placeholder="your password">
                     </p>
                     <p>
-                      <span class=" w3-col l12 w3-round w3-grey w3-text-dark-grey w3-hover-text-grey w3-padding" type="submit" name="button" >Login</span>
+                      <input type="submit"  class="w3-col l12 w3-round w3-btn w3-hover-none w3-hover-grey w3-hover-text-white w3-grey w3-text-dark-grey w3-hover-text-grey w3-padding"name="btnlogin" value="Login" >
                     </p>
-
+                  </form>
                   </div><br><br><br><br><br><br>
           </div>
       <!--/div-->

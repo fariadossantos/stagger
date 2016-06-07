@@ -38,7 +38,7 @@
         <div class="w3-padding" id="feedparentbox">
           <div class="w3-row  w3-white">
             <p class="w3-white" style="margin:0; ">
-              <img class="w3-image" src="img/33.jpg" alt="" id="feedimg" />
+              <img class="w3-image " src="img/33.jpg" alt="" id="feedimg" style="cursor:pointer"/>
               <ul class="w3-navbar w3-white w3-center w3-small">
                 <li style="width:25% w3-left">
                   <a  class="w3-hover-white w3-hover-text-dark-grey w3-text-grey" href="#">
