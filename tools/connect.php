@@ -1,13 +1,28 @@
 <?php
+require ("adodb/adodb.inc.php");
+//require ('funcoes.php');
+class connectionbd {
+	var $master;
 
-class connect {
-  var $conn;
-  function connect (){
-    $this->conn = new PDO('mysql:host=localhost;dbname=u163653339_stagr', 'u163653339_root', '1q2w3e4r5t6y');
-  }
+	function connectionbd (){
+		$this->master = NewADOConnection ("mysql");
+		$this->master->dialect=3;
+		$this->master->debug=false;
+		$this->master->connect ("localhost", "root", "", "stagger")  or die($this->master->errorMsg());
+		$this->master->Execute("SET NAMES 'utf8'");
+		$this->master->Execute=('SET character_set_connection=utf8');
+		$this->master->Execute=('SET character_set_client=utf8');
+		$this->master->Execute=('SET character_set_results=utf8');
+	}
 }
 
 
-$conect = new connect();
+// if ($con = new connectionbd()) {
+// echo "Funcionando";
+// }
+// else {
+// echo "não funcionando";
+// }
+
 
 ?>

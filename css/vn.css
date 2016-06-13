@@ -1,0 +1,71 @@
+
+/* Venus Develop Css Framework for responsive web app      */
+/* By Carvalho Tchipepe. 100% Free - Customize as you want */
+
+/* Any question or collaboration find us at github or tweet @ndandapaga */
+
+/* Padding style */
+
+.vn-no-padding{padding:0;}
+
+/* Margin style */
+
+.vn-no-margin{padding:0}
+.vn-margin-auto{margin:0 auto;}
+
+/* Hide and show */
+
+.vn-show{display: block;}
+.vn-hide{display:none}
+
+/* Login transparent cover */
+
+.vn-login-cover{z-index:3;display:block;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+
+.vn-left{float:left}
+.vn-right{float:right}
+.vn-col,.vn-half,.vn-third,.vn-twothird,.vn-threequarter,.vn-quarter{width:100%}
+.vn-col.s1{width:8.33333%}
+.vn-col.s2{width:16.66666%}
+.vn-col.s3{width:24.99999%}
+.vn-col.s4{width:33.33333%}
+.vn-col.s5{width:41.66666%}
+.vn-col.s6{width:49.99999%}
+.vn-col.s7{width:58.33333%}
+.vn-col.s8{width:66.66666%}
+.vn-col.s9{width:74.99999%}
+.vn-col.s10{width:83.33333%}
+.vn-col.s11{width:91.66666%}
+.vn-col.s12,.vn-half,.vn-third,.vn-twothird,.vn-threequarter,.vn-quarter{width:99.99999%}
+
+@media only screen and (min-width:601px){
+.vn-col.m1{width:8.33333%}
+.vn-col.m2{width:16.66666%}
+.vn-col.m3,.vn-quarter{width:24.99999%}
+.vn-col.m4,.vn-third{width:33.33333%}
+.vn-col.m5{width:41.66666%}
+.vn-col.m6,.vn-half{width:49.99999%}
+.vn-col.m7{width:58.33333%}
+.vn-col.m8,.vn-twothird{width:66.66666%}
+.vn-col.m9,.vn-threequarter{width:74.99999%}
+.vn-col.m10{width:83.33333%}
+.vn-col.m11{width:91.66666%}
+.vn-col.m12{width:99.99999%}}
+
+
+@media only screen and (min-width:993px){
+.vn-col.l1{width:8.33333%}
+.vn-col.l2{width:16.66666%}
+.vn-col.l3,.vn-quarter{width:24.99999%}
+.vn-col.l4,.vn-third{width:33.33333%}
+.vn-col.l5{width:41.66666%}
+.vn-col.l6,.vn-half{width:49.99999%}
+.vn-col.l7{width:58.33333%}
+.vn-col.l8,.vn-twothird{width:66.66666%}
+.vn-col.l9,.vn-threequarter{width:74.99999%}
+.vn-col.l10{width:83.33333%}
+.vn-col.l11{width:91.66666%}
+.vn-col.l12{width:99.99999%}}
+.vn-content{max-width:980px;margin:auto}
+.vn-rest{overflow:hidden}
+.vn-hide{display:none!important}.vn-show-block,.vn-show{display:block!important}.vn-show-inline-block{display:inline-block!important}
