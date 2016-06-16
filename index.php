@@ -61,7 +61,8 @@
 
     <div class="w3-row vn-login-cover vn-margin-auto " style="">
 
-       <form class="w3-display-middle" name="" action="" method="post">
+       <form class="w3-display-middle"  id="vn-form-init" name="" action="" method="post">
+         <p class="msg"></p>
          <p class=""  >
              <input type="text" name="name" placeholder="Login" id="vn-login" onclick="addPassword()"
             class="w3-center w3-round w3-border w3-border-white" style="background-color:transparent; width:192px">
@@ -69,12 +70,9 @@
 
          <!-- Password input field shows when login is clicked -->
          <p class="" id="vn-login-password" style="display:none;">
-
-             <input type="password" name="name" placeholder="Password"
+             <input type="password" name="loginpassword" placeholder="Password"
             class="w3-center w3-round w3-border w3-border-white" style="background-color:transparent; width:192px ">
-
          </p>
-
          <!-- Show login submit button only when login is clicked -->
          <p id="vn-login-submit" style="display:none;">
            <input type="submit" name="name" value="Login"
@@ -82,25 +80,29 @@
          </p>
 
          <!-- Sign up input field - Disapear when login is clicked -->
+         <p id="vn-signup-username" style="display:none;" >
+           <input type="text" name="username" value="" placeholder="your name"
+            class="w3-center w3-round w3-border w3-border-white" style="background-color:transparent; width:192px ">
+         </p>
          <p>
-           <input type="email" name="name" value="" placeholder="Sign up" id="vn-signup" onclick="userSignup()"
+           <input type="email" name="userdatasignup" value="" placeholder="Sign up" id="vn-signup" onclick="userSignup()"
             class="w3-center w3-round w3-border w3-border-white" style="background-color:transparent; width:192px ">
          </p>
 
 
          <!-- Signup password -->
          <p id="vn-signup-password" style="display:none;" >
-           <input type="password" name="name" value="" placeholder="Password"
+           <input type="password" name="password" value="" placeholder="Password"
             class="w3-center w3-round w3-border w3-border-white" style="background-color:transparent; width:192px ">
          </p>
 
          <!-- Choose type of user - brand or individual -->
          <p id="vn-user-type" style="display:none;" onclick="" >
-           <input type="radio" name="name" value="Normal" id="vn-signup-normal"
+           <input type="radio" name="type" value="Normal" id="vn-signup-normal"
             class="w3-center w3-radio"
             style="background-color:transparent; "><label class="w3-label" for="vn-signup-normal">Normal</label>
 
-            <input type="radio" name="name" value="" id="vn-signup-brand"
+            <input type="radio" name="type" value="Brand" id="vn-signup-brand"
              class="w3-center w3-radio"
              style="background-color:transparent;  "><label class="w3-label" for="vn-signup-brand">Brand</label>
          </p>
@@ -122,35 +124,4 @@
        </form>
     </div>
 </body>
-<script>
-  $("document").ready(function(){
-
-/* Capture on login click event */
-    $("#vn-login").on("click", completeLogin);
-
-    function completeLogin(){
-      $("#vn-signup, #vn-watch").css("display", "none");
-      $("#vn-login-password, #vn-login-submit").css("display", "block");
-      $("#vn-login").attr("placeholder", "email or phone")
-    }
-
-/* Signup click and field display */
-    $("#vn-signup").on("click", showSignup);
-
-    function showSignup(){
-      $("#vn-login, #vn-watch").css("display", "none");
-      $("#vn-signup-password, #vn-signup-submit, #vn-user-type").css("display", "block");
-      $("#vn-signup").attr("placeholder", "email");
-    }
-
-/* Just watch button active */
-    $("#vn-just-watch").on("click", justWatch);
-
-    function justWatch(){
-     $(".vn-login-cover").css("display", "none");
-     $(".vn-menu").css("display", "block");
-    }
-
-  });
-</script>
 </html>
